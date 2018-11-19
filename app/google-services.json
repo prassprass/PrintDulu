@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "114433630772",
+    "firebase_url": "https://printdulu-715c1.firebaseio.com",
+    "project_id": "printdulu-715c1",
+    "storage_bucket": "printdulu-715c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:114433630772:android:92d04df9bb433849",
+        "android_client_info": {
+          "package_name": "com.printdulu.pras.printdulu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "114433630772-tk7j08bdcr84836f42ipnf3joojnja6v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.printdulu.pras.printdulu",
+            "certificate_hash": "946c36b1ed097f46d161b1e68c4fbd6fb7f43adc"
+          }
+        },
+        {
+          "client_id": "114433630772-0g8t5e1o18qhdkg7s3gvqrv7mhdeo9pb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDh6zVGR5QrrnFWxEsn_GKQKUpkpvt4l74"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "114433630772-0g8t5e1o18qhdkg7s3gvqrv7mhdeo9pb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
