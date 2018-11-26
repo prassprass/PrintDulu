@@ -33,7 +33,7 @@ public class FileAdapter extends RecyclerView.Adapter <FileAdapter.FileViewHolde
     @NonNull
     @Override
     public FileViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.fragment_home, viewGroup, false);
+        View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.file_item, viewGroup, false);
         FileViewHolder fvh = new FileViewHolder(v);
         return fvh;
     }
@@ -42,7 +42,7 @@ public class FileAdapter extends RecyclerView.Adapter <FileAdapter.FileViewHolde
     public void onBindViewHolder(@NonNull FileViewHolder fileViewHolder, int i) {
         FileItem currentItem = mFileList.get(i);
 
-        fileViewHolder.mImageView.setImageResource(currentItem.getmImageResource());
+        fileViewHolder.mImageView.setImageResource(R.drawable.file);
         fileViewHolder.mTextView1.setText(currentItem.getmNamaFile());
         fileViewHolder.mTextView2.setText(currentItem.getmDetailFile());
     }

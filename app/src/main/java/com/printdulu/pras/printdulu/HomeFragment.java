@@ -31,8 +31,8 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
-//        mRecyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
-//
+        mRecyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
+
 //        ArrayList<FileItem> fileList = new ArrayList<>();
 //        fileList.add(new FileItem(R.drawable.file, "File 1", "Detail File 1"));
 //        fileList.add(new FileItem(R.drawable.file, "File 2", "Detail File 2"));
@@ -47,5 +47,20 @@ public class HomeFragment extends Fragment {
         return view;
 
 //        return inflater.inflate(R.layout.fragment_home, container, false);
+    }
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        ArrayList<FileItem> fileList = new ArrayList<>();
+        fileList.add(new FileItem(R.drawable.file, "File 1", "Detail File 1"));
+        fileList.add(new FileItem(R.drawable.file, "File 2", "Detail File 2"));
+        fileList.add(new FileItem(R.drawable.file, "File 3", "Detail File 3"));
+
+        mRecyclerView.setHasFixedSize(true);
+        mLayoutManager = new LinearLayoutManager(this.getActivity());
+        mAdapter = new FileAdapter(fileList);
+        mRecyclerView.setLayoutManager(mLayoutManager);
+        mRecyclerView.setAdapter(mAdapter);
     }
 }
